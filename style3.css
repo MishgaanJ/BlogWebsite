@@ -1,0 +1,618 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Poppins;
+}
+body .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+body h1 {
+  font-family: Poppins;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .responsivenav {
+  display: none;
+}
+main nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+main nav h1 i {
+  width: 36px;
+  height: 20px;
+}
+main nav h1 a {
+  color: black;
+}
+main nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+main nav ul li {
+  padding: 10px;
+  list-style: none;
+  gap: 92px;
+  font-weight: bold;
+}
+main nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+main nav ul button {
+  background-color: #F5487F;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  width: 100px;
+}
+main .form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 80%;
+  background-color: rgb(254, 239, 244);
+  border-radius: 10px;
+}
+main .form #colorsect {
+  width: 90%;
+  border-radius: 10px;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgb(245, 72, 127), rgba(143, 42, 74, 0.73));
+  color: white;
+  padding-left: 40px;
+  margin: 5px;
+}
+main .form #colorsect .balloons {
+  position: absolute;
+  left: 460px;
+  top: 490px;
+}
+main .form #colorsect .balloon2 {
+  position: absolute;
+  left: 487px;
+  top: 515px;
+}
+main .form #colorsect h2 {
+  width: 177px;
+  height: 45px;
+  font-size: 2rem;
+  margin: 0;
+  text-wrap: nowrap;
+  padding-top: 20px;
+}
+main .form #colorsect p {
+  font-size: 1.2rem;
+  text-align: justify;
+  width: 400px;
+  z-index: 1;
+}
+main .form #colorsect .icons {
+  width: 50%;
+  font-size: 1.2rem;
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin-bottom: 10px;
+}
+main .form #colorsect .icons i {
+  padding: 10px;
+  color: black;
+  font-size: 1.5rem;
+}
+main .form #colorsect .icons i:hover {
+  color: #F5487F;
+  cursor: pointer;
+}
+main .form #credential {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+main .form #credential label {
+  width: 51%;
+  margin: 0;
+  padding: 0;
+  line-height: 1px;
+}
+main .form #credential input {
+  width: 50%;
+  padding: 5px;
+  border-radius: 7px;
+  border: 2px solid rgba(0, 0, 0, 0.21);
+}
+main .form #credential textarea {
+  width: 50%;
+  border-radius: 7px;
+  border: 2px solid rgba(0, 0, 0, 0.21);
+  height: 45px;
+}
+main .form #credential button {
+  width: 280px;
+  height: 50px;
+  padding: 15px;
+  background-color: rgb(245, 72, 127);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+main footer {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+main footer #inside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 30px;
+}
+main footer #inside #side1 {
+  width: 50%;
+}
+main footer #inside #side1 p {
+  width: 60%;
+}
+main footer #inside #side1 span {
+  font-weight: bold;
+}
+main footer #inside #side2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 110px;
+}
+main footer #inside #side2 #links {
+  width: 150px;
+  height: 172px;
+}
+main footer #inside #side2 #links ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+main footer #inside #side2 #links ul li {
+  list-style: none;
+}
+main footer #inside #side2 #category {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main footer #inside #side2 #category ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+main footer #inside #side2 #category ul li {
+  list-style: none;
+}
+main footer #inside #side3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 495px;
+  height: 236px;
+}
+main footer .bigcontainer {
+  width: 100%;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main footer .bigcontainer #extend {
+  background-image: linear-gradient(to left, #F5487F, #FFFFFF);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+  position: absolute;
+  background: transparent;
+  bottom: 0;
+  right: 0;
+}
+main footer .bigcontainer #extend hr {
+  color: black;
+  width: 85%;
+}
+main footer .bigcontainer #extend h5 {
+  width: 90%;
+  text-align: right;
+  width: 90%;
+  padding: 20px;
+  padding-right: 100px;
+}
+main footer .bigcontainer #extend h5 span {
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+  }
+  main #hidden {
+    display: none;
+  }
+  main .responsivenav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    z-index: 4;
+    width: 100%;
+    padding: 0;
+  }
+  main .responsivenav h1 {
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  main .responsivenav h1 a {
+    color: black;
+  }
+  main .responsivenav .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  main .responsivenav .menu ul {
+    background-color: rgb(245, 72, 127);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+  }
+  main .responsivenav .menu ul li {
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  main .responsivenav .menu ul li h1 i {
+    padding: 50px;
+    font-size: 2rem;
+  }
+  main .responsivenav .menu ul li a {
+    color: white;
+  }
+  main nav {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95%;
+    font-size: 0.4rem;
+    text-wrap: nowrap;
+  }
+  main nav h1 i {
+    text-align: center;
+    width: 36px;
+    height: 20px;
+    margin-top: 8px;
+  }
+  main nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  main nav ul li {
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+  }
+  main nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  main nav ul button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5487F;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    width: 50px;
+    height: 20px;
+    font-size: 0.5rem;
+    margin-top: 5px;
+  }
+  main .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 90%;
+    background-color: rgb(254, 239, 244);
+    border-radius: 10px;
+    gap: 20px;
+  }
+  main .form #colorsect {
+    width: 90%;
+    border-radius: 10px;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(245, 72, 127), rgba(143, 42, 74, 0.73));
+    color: white;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  main .form #colorsect .balloons {
+    position: absolute;
+    left: 110px;
+    top: 255px;
+    z-index: 0;
+  }
+  main .form #colorsect .balloons img {
+    width: 100px;
+  }
+  main .form #colorsect .balloon2 {
+    position: absolute;
+    left: 130px;
+    top: 250px;
+  }
+  main .form #colorsect h2 {
+    width: 177px;
+    height: 45px;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    text-wrap: nowrap;
+    padding-bottom: 0;
+    padding-top: 15px;
+  }
+  main .form #colorsect p {
+    font-size: 0.8rem;
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    z-index: 1;
+  }
+  main .form #colorsect .icons {
+    width: 50%;
+    font-size: 0.8rem;
+    padding: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 10px;
+    z-index: 1;
+  }
+  main .form #colorsect .icons i {
+    color: black;
+    font-size: 0.8rem;
+  }
+  main .form #colorsect .icons i:hover {
+    color: #F5487F;
+    cursor: pointer;
+  }
+  main .form #credential {
+    width: 90%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  main .form #credential label {
+    width: 95%;
+    height: 100%;
+    margin-top: 10px;
+    padding: 0;
+    line-height: 1px;
+  }
+  main .form #credential input {
+    width: 90%;
+    padding: 5px;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.21);
+  }
+  main .form #credential textarea {
+    width: 90%;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.21);
+    height: 45px;
+  }
+  main .form #credential button {
+    width: 90%;
+    height: 50px;
+    background-color: rgb(245, 72, 127);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  main footer {
+    width: 100%;
+    background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  main footer #inside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    gap: 20px;
+  }
+  main footer #inside #side1 {
+    width: 70%;
+  }
+  main footer #inside #side1 p {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 0.5rem;
+  }
+  main footer #inside #side1 h3 {
+    font-size: 0.8rem;
+  }
+  main footer #inside #side1 span {
+    font-weight: bold;
+  }
+  main footer #inside #side2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main footer #inside #side2 #links {
+    width: 100px;
+    height: 172px;
+  }
+  main footer #inside #side2 #links h3 {
+    font-size: 0.8rem;
+  }
+  main footer #inside #side2 #links ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  main footer #inside #side2 #links ul li {
+    list-style: none;
+    font-size: 0.5rem;
+  }
+  main footer #inside #side2 #category {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main footer #inside #side2 #category h3 {
+    font-size: 0.8rem;
+  }
+  main footer #inside #side2 #category ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  main footer #inside #side2 #category ul li {
+    list-style: none;
+    font-size: 0.5rem;
+  }
+  main footer .bigcontainer {
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  main footer .bigcontainer #extend {
+    background-image: linear-gradient(to left, #F5487F, #FFFFFF);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+    position: absolute;
+    background: transparent;
+    bottom: 0;
+    right: 0;
+  }
+  main footer .bigcontainer #extend hr {
+    color: black;
+    width: 100%;
+  }
+  main footer .bigcontainer #extend h5 {
+    width: 100%;
+    text-align: right;
+    width: 50%;
+    padding-left: 100px;
+    font-size: 0.5rem;
+    text-wrap: nowrap;
+  }
+  main footer .bigcontainer #extend h5 span {
+    color: black;
+  }
+}/*# sourceMappingURL=style3.css.map */

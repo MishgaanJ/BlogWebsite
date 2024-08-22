@@ -1,0 +1,660 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Work Sans;
+  overflow-x: hidden;
+}
+body .work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+}
+.container .card {
+  position: relative;
+}
+
+.container.active {
+  filter: blur(20px);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  transform: 0.5s;
+  top: 50%;
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+#popup .card {
+  border: 2px solid white;
+  height: 488px;
+  width: 392px;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  overflow-y: scroll;
+}
+#popup .card .cardimg {
+  height: 250px;
+}
+#popup .card .cardimg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#popup .card .cardtag {
+  padding-left: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#popup .card .cardtag ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+#popup .card .cardtag ul li {
+  padding: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 6px;
+  background-color: rgba(245, 72, 127, 0.1);
+  color: rgb(245, 72, 127);
+}
+#popup .card .cardheading {
+  color: black;
+  padding-left: 16px;
+}
+#popup .card .cardheading h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+#popup .card p {
+  padding-left: 16px;
+}
+#popup .card .carddetails {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+#popup .card .carddetails .cardpic {
+  width: 36px;
+  height: 36px;
+}
+#popup .card .carddetails .cardpic img {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#popup .card .carddetails .cardname {
+  color: rgb(245, 72, 127);
+  font-size: 1rem;
+}
+#popup .card .carddetails .carddate {
+  color: rgb(245, 72, 127);
+}
+#popup .card .text {
+  margin: 10px;
+  width: 259.65px;
+  height: 138px;
+  top: 83.91px;
+  left: 280.23px;
+}
+#popup .card .text p {
+  color: #333333;
+}
+#popup .card .text h1 {
+  color: #121127;
+}
+#popup .card .text #side2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#popup .card .text #side2 #pp2 {
+  width: 47.5px;
+  height: 47.5px;
+}
+#popup .card .text #side2 #pp2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#popup .card .text #side2 #name2 {
+  font-size: medium;
+  font-weight: bold;
+  color: #121127;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+}
+main #mainheading h1 {
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main #mainheading h1 a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main #mainheading h1 a i {
+  color: white;
+  position: absolute;
+  left: -520px;
+  font-size: 1.5rem;
+}
+main #newposts {
+  display: none;
+  overflow-x: scroll;
+  width: 100%;
+}
+main #newposts .card {
+  width: 100%;
+}
+main #newposts .card .cardheading h1 {
+  font-size: 1.4rem;
+}
+main #newposts .card .cardimg {
+  width: 300px;
+}
+main .gridframe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+main .gridframe .card {
+  border: 2px solid white;
+  height: 488px;
+  width: 392px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+}
+main .gridframe .card .cardimg {
+  height: 250px;
+}
+main .gridframe .card .cardimg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main .gridframe .card .cardtag {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .gridframe .card .cardtag ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+main .gridframe .card .cardtag ul li {
+  padding: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 6px;
+  background-color: rgba(245, 72, 127, 0.1);
+  color: rgb(245, 72, 127);
+}
+main .gridframe .card .cardheading {
+  color: black;
+}
+main .gridframe .card .cardheading h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+main .gridframe .card .carddetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+main .gridframe .card .carddetails .cardpic {
+  width: 36px;
+  height: 36px;
+}
+main .gridframe .card .carddetails .cardpic img {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+main .gridframe .card .carddetails .cardname {
+  color: rgb(245, 72, 127);
+  font-size: 1rem;
+}
+main .gridframe .card .carddetails .carddate {
+  color: rgb(245, 72, 127);
+}
+main button {
+  background-color: transparent;
+  color: rgb(245, 72, 127);
+  padding: 10px;
+  border: 1px solid rgb(245, 72, 127);
+  border-radius: 6px;
+  width: 143px;
+  height: 48px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  #popup .card {
+    height: 490px;
+    width: 250px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    overflow-y: scroll;
+  }
+  #popup .card .cardimg {
+    height: 250px;
+  }
+  #popup .card .cardimg img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #popup .card .cardtag {
+    padding-left: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #popup .card .cardtag ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  #popup .card .cardtag ul li {
+    padding: 5px;
+    font-size: 0.8rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 6px;
+    background-color: rgba(245, 72, 127, 0.1);
+    color: rgb(245, 72, 127);
+  }
+  #popup .card .cardheading {
+    color: black;
+    padding-left: 16px;
+  }
+  #popup .card .cardheading h1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  #popup .card p {
+    padding-left: 16px;
+    font-size: 0.8rem;
+  }
+  #popup .card .carddetails {
+    padding-left: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  #popup .card .carddetails .cardpic {
+    width: 36px;
+    height: 36px;
+  }
+  #popup .card .carddetails .cardpic img {
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: circle();
+            clip-path: circle();
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #popup .card .carddetails .cardname {
+    color: rgb(245, 72, 127);
+    font-size: 1rem;
+  }
+  #popup .card .carddetails .carddate {
+    color: rgb(245, 72, 127);
+  }
+  #popup .card .text {
+    margin: 10px;
+    width: 259.65px;
+    height: 138px;
+    top: 83.91px;
+    left: 280.23px;
+  }
+  #popup .card .text p {
+    color: #333333;
+  }
+  #popup .card .text h1 {
+    color: #121127;
+  }
+  #popup .card .text #side2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #popup .card .text #side2 #pp2 {
+    width: 47.5px;
+    height: 47.5px;
+  }
+  #popup .card .text #side2 #pp2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #popup .card .text #side2 #name2 {
+    font-size: medium;
+    font-weight: bold;
+    color: #121127;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 20px;
+  }
+  main #mainheading h1 {
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  main #mainheading h1 a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  main #mainheading h1 a i {
+    color: white;
+    position: absolute;
+    left: 86px;
+    top: -50px;
+    font-size: 1.5rem;
+  }
+  main .gridframe {
+    display: flex;
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 20px;
+  }
+  main .gridframe .card {
+    height: 200px;
+    width: 200px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+  }
+  main .gridframe .card .cardimg {
+    height: 190px;
+  }
+  main .gridframe .card .cardimg img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  main .gridframe .card .cardtag {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  main .gridframe .card .cardtag ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  main .gridframe .card .cardtag ul li {
+    padding: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 6px;
+    background-color: rgba(245, 72, 127, 0.1);
+    color: rgb(245, 72, 127);
+  }
+  main .gridframe .card .cardheading {
+    color: black;
+  }
+  main .gridframe .card .cardheading h1 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  main .gridframe .card .carddetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  main .gridframe .card .carddetails .cardpic {
+    width: 36px;
+    height: 36px;
+  }
+  main .gridframe .card .carddetails .cardpic img {
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: circle();
+            clip-path: circle();
+  }
+  main .gridframe .card .carddetails .cardname {
+    color: rgb(245, 72, 127);
+    font-size: 1rem;
+  }
+  main .gridframe .card .carddetails .carddate {
+    color: rgb(245, 72, 127);
+  }
+  main button {
+    background-color: transparent;
+    color: rgb(245, 72, 127);
+    padding: 10px;
+    border: 1px solid rgb(245, 72, 127);
+    border-radius: 6px;
+    width: 143px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main #newposts {
+    display: none;
+    width: -moz-fit-content;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main #newposts .card {
+    width: 100%;
+  }
+  main #newposts .card .cardheading h1 {
+    font-size: 1.4rem;
+  }
+  main #newposts .card .cardimg {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 20px;
+  }
+  main .gridframe {
+    display: flex;
+    gap: 20px;
+  }
+  main .gridframe .card {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 250px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+  }
+  main .gridframe .card .cardimg {
+    height: 190px;
+  }
+  main .gridframe .card .cardimg img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  main .gridframe .card .cardtag {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  main .gridframe .card .cardtag ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  main .gridframe .card .cardtag ul li {
+    padding: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 6px;
+    background-color: rgba(245, 72, 127, 0.1);
+    color: rgb(245, 72, 127);
+  }
+  main .gridframe .card .cardheading {
+    color: black;
+  }
+  main .gridframe .card .cardheading h1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  main .gridframe .card .carddetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    height: 50%;
+  }
+  main .gridframe .card .carddetails .cardpic {
+    width: 36px;
+    height: 36px;
+  }
+  main .gridframe .card .carddetails .cardpic img {
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: circle();
+            clip-path: circle();
+  }
+  main .gridframe .card .carddetails .cardname {
+    color: rgb(245, 72, 127);
+    font-size: 1rem;
+  }
+  main .gridframe .card .carddetails .carddate {
+    color: rgb(245, 72, 127);
+  }
+  main button {
+    background-color: transparent;
+    color: rgb(245, 72, 127);
+    padding: 10px;
+    border: 1px solid rgb(245, 72, 127);
+    border-radius: 6px;
+    width: 143px;
+    height: 48px;
+    cursor: pointer;
+  }
+  main #newposts {
+    display: none;
+  }
+  main #newposts .card {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 250px;
+  }
+  main #newposts .cardimg img {
+    width: 250px;
+  }
+  main #newposts .cardheading {
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=mystyle.css.map */

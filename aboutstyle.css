@@ -1,0 +1,812 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Poppins;
+}
+body .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+body h1 {
+  font-family: Poppins;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .frame {
+  height: 100vh;
+  background-image: url("./images/banner5.jfif");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .frame nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 0px;
+}
+main .frame nav h1 i {
+  width: 36px;
+  height: 20px;
+}
+main .frame nav h1 a {
+  color: black;
+}
+main .frame nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+main .frame nav ul li {
+  padding: 10px;
+  list-style: none;
+  gap: 92px;
+  font-weight: bold;
+}
+main .frame nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+main .frame nav ul button {
+  background-color: #F5487F;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  width: 100px;
+}
+main .frame #vector {
+  position: absolute;
+  top: 87px;
+  left: 130px;
+  z-index: 2;
+}
+main .frame #frame10 {
+  position: absolute;
+  top: 185px;
+  right: 320px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .frame #frame10 img {
+  width: 330px;
+}
+main .frame #banner {
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+  position: relative;
+}
+main .frame #banner .profilepicture {
+  margin-left: 10px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+main .frame #banner .profilepicture img {
+  width: 95%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .frame #banner .text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .frame #banner .text .textheading {
+  width: 90%;
+}
+main .frame #banner .text .textpassage {
+  width: 90%;
+}
+main .frame #banner .text .textpassage span {
+  font-weight: bold;
+}
+main .frame #banner .text .texticon {
+  width: 90%;
+}
+main .frame #banner .text .texticon i {
+  padding: 5px;
+  height: 20px;
+  color: rgb(116, 116, 116);
+}
+main .frame #banner .text .texticon i:hover {
+  color: rgb(245, 72, 127);
+}
+main .frame #banner .backframe {
+  width: 450px;
+  height: 450px;
+  background-color: transparent;
+  border: 4px solid white;
+  z-index: 0;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+main .latestheading {
+  width: 90%;
+}
+main .gridframe {
+  display: grid;
+  width: 90%;
+  height: 1150px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+main .gridframe .card {
+  border: 2px solid rgb(255, 255, 255);
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 350px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 10px gray;
+  color: black;
+}
+main .gridframe .card .cardimg {
+  height: 250px;
+}
+main .gridframe .card .cardimg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main .gridframe .card .cardtag {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .gridframe .card .cardtag ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+main .gridframe .card .cardtag ul li {
+  padding: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 6px;
+  background-color: rgba(245, 72, 127, 0.1);
+  color: rgb(245, 72, 127);
+}
+main .gridframe .card .cardheading {
+  color: black;
+}
+main .gridframe .card .cardheading h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+main .gridframe .card .carddetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+main .gridframe .card .carddetails .cardpic {
+  width: 36px;
+  height: 36px;
+}
+main .gridframe .card .carddetails .cardpic img {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+main .gridframe .card .carddetails .cardname {
+  color: rgb(245, 72, 127);
+  font-size: 1rem;
+}
+main .gridframe .card .carddetails .carddate {
+  color: rgb(245, 72, 127);
+}
+main footer {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+main footer #inside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 30px;
+}
+main footer #inside #side1 {
+  width: 50%;
+}
+main footer #inside #side1 p {
+  width: 60%;
+}
+main footer #inside #side1 span {
+  font-weight: bold;
+}
+main footer #inside #side2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 110px;
+}
+main footer #inside #side2 #links {
+  width: 150px;
+  height: 172px;
+}
+main footer #inside #side2 #links ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+main footer #inside #side2 #links ul li {
+  list-style: none;
+}
+main footer #inside #side2 #category {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main footer #inside #side2 #category ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+main footer #inside #side2 #category ul li {
+  list-style: none;
+}
+main footer #inside #side3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 495px;
+  height: 236px;
+}
+main footer .bigcontainer {
+  width: 100%;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main footer .bigcontainer #extend {
+  background-image: linear-gradient(to left, #F5487F, #FFFFFF);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+  position: absolute;
+  background: transparent;
+  bottom: 0;
+  right: 0;
+}
+main footer .bigcontainer #extend hr {
+  color: black;
+  width: 85%;
+}
+main footer .bigcontainer #extend h5 {
+  width: 90%;
+  text-align: right;
+  width: 90%;
+  padding: 20px;
+  padding-right: 100px;
+}
+main footer .bigcontainer #extend h5 span {
+  color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Poppins;
+  }
+  body .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  body h1 {
+    font-family: Poppins;
+  }
+  main {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  main .frame {
+    height: -moz-fit-content;
+    height: fit-content;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .frame .responsivenav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    z-index: 4;
+    width: 100%;
+    padding: 0;
+  }
+  main .frame .responsivenav h1 {
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  main .frame .responsivenav .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  main .frame .responsivenav .menu ul {
+    background-color: rgb(245, 72, 127);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+  }
+  main .frame .responsivenav .menu ul li {
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  main .frame .responsivenav .menu ul li h1 i {
+    padding: 50px;
+    font-size: 2rem;
+  }
+  main .frame .responsivenav .menu ul li a {
+    color: white;
+  }
+  main .frame nav {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 0.4rem;
+    text-wrap: nowrap;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+  }
+  main .frame nav h1 i {
+    text-align: center;
+    width: 36px;
+    height: 20px;
+    margin-top: 8px;
+  }
+  main .frame nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  main .frame nav ul li {
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+  }
+  main .frame nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  main .frame nav ul button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5487F;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    width: 50px;
+    height: 20px;
+    font-size: 0.5rem;
+    margin-top: 5px;
+  }
+  main .frame #vector {
+    position: absolute;
+    top: 37px;
+    left: 72px;
+    z-index: 2;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .frame #vector img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .frame #frame10 {
+    position: absolute;
+    top: 260px;
+    right: 80px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  main .frame #frame10 img {
+    width: 160px;
+  }
+  main .frame #banner {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    position: relative;
+    margin-top: 0;
+  }
+  main .frame #banner .profilepicture {
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  main .frame #banner .profilepicture img {
+    width: 150px;
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .frame #banner .text {
+    margin-top: 30px;
+    width: 90%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+  }
+  main .frame #banner .text .textheading {
+    width: 90%;
+  }
+  main .frame #banner .text .textheading h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  main .frame #banner .text .textpassage {
+    width: 90%;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  main .frame #banner .text .textpassage span {
+    font-weight: bold;
+    font-size: 0.6rem;
+    display: none;
+  }
+  main .frame #banner .text .textpassage #special {
+    display: none;
+  }
+  main .frame #banner .text .texticon {
+    width: 90%;
+    text-align: center;
+  }
+  main .frame #banner .text .texticon i {
+    padding: 5px;
+    height: 20px;
+    font-size: 0.9rem;
+    color: rgb(116, 116, 116);
+  }
+  main .frame #banner .text .texticon i:hover {
+    color: rgb(245, 72, 127);
+  }
+  main .frame #banner .backframe {
+    width: 150px;
+    height: 140px;
+    background-color: transparent;
+    border: 4px solid white;
+    z-index: 0;
+    position: absolute;
+    top: 75px;
+    left: 100px;
+  }
+  main .frame .responsive {
+    display: none;
+  }
+  main .responsive1 {
+    display: none;
+  }
+  main .latestheading {
+    text-align: center;
+    width: 90%;
+  }
+  main .latestheading h1 {
+    font-size: 0.8rem;
+  }
+  main #show {
+    display: block;
+  }
+  main .gridframe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    place-items: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 5px;
+    row-gap: 15px;
+  }
+  main .gridframe .card {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 140px;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px gray;
+    color: black;
+  }
+  main .gridframe .card .cardimg {
+    height: 100px;
+  }
+  main .gridframe .card .cardimg img {
+    height: 100px;
+    width: 135px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4px;
+  }
+  main .gridframe .card .cardtag {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  main .gridframe .card .cardtag ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  main .gridframe .card .cardtag ul li {
+    padding: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 6px;
+    font-size: 0.4rem;
+    background-color: rgba(245, 72, 127, 0.1);
+    color: rgb(245, 72, 127);
+  }
+  main .gridframe .card .cardheading {
+    color: black;
+  }
+  main .gridframe .card .cardheading h1 {
+    font-size: 0.5rem;
+    margin: 0;
+  }
+  main .gridframe .card .carddetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+  }
+  main .gridframe .card .carddetails .cardpic {
+    width: 30px;
+    height: 30px;
+  }
+  main .gridframe .card .carddetails .cardpic img {
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: circle();
+            clip-path: circle();
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .gridframe .card .carddetails .cardname {
+    color: rgb(245, 72, 127);
+    font-size: 0.4rem;
+  }
+  main .gridframe .card .carddetails .carddate {
+    font-size: 0.4rem;
+    color: rgb(245, 72, 127);
+  }
+  main footer {
+    width: 100%;
+    background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  main footer #inside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    gap: 20px;
+  }
+  main footer #inside #side1 {
+    width: 70%;
+  }
+  main footer #inside #side1 p {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 0.5rem;
+  }
+  main footer #inside #side1 h3 {
+    font-size: 0.8rem;
+  }
+  main footer #inside #side1 span {
+    font-weight: bold;
+  }
+  main footer #inside #side2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main footer #inside #side2 #links {
+    width: 100px;
+    height: 172px;
+  }
+  main footer #inside #side2 #links h3 {
+    font-size: 0.8rem;
+  }
+  main footer #inside #side2 #links ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  main footer #inside #side2 #links ul li {
+    list-style: none;
+    font-size: 0.5rem;
+  }
+  main footer #inside #side2 #category {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main footer #inside #side2 #category h3 {
+    font-size: 0.8rem;
+  }
+  main footer #inside #side2 #category ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  main footer #inside #side2 #category ul li {
+    list-style: none;
+    font-size: 0.5rem;
+  }
+  main footer .bigcontainer {
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  main footer .bigcontainer #extend {
+    background-image: linear-gradient(to left, #F5487F, #FFFFFF);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+    position: absolute;
+    background: transparent;
+    bottom: 0;
+    right: 0;
+  }
+  main footer .bigcontainer #extend hr {
+    color: black;
+    width: 100%;
+  }
+  main footer .bigcontainer #extend h5 {
+    width: 100%;
+    text-align: right;
+    width: 50%;
+    padding-left: 100px;
+    font-size: 0.5rem;
+    text-wrap: nowrap;
+  }
+  main footer .bigcontainer #extend h5 span {
+    color: black;
+  }
+}/*# sourceMappingURL=aboutstyle.css.map */

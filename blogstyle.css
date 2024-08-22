@@ -1,0 +1,1196 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Poppins;
+}
+body .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+body h1 {
+  font-family: Poppins;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  position: absolute;
+  top: 0;
+}
+main nav h1 i {
+  width: 36px;
+  height: 20px;
+}
+main nav h1 a {
+  color: black;
+}
+main nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+main nav ul li {
+  padding: 10px;
+  list-style: none;
+  gap: 92px;
+  font-weight: bold;
+}
+main nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+main nav ul button {
+  background-color: #F5487F;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  width: 100px;
+}
+main .mainframe {
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  top: 0;
+  z-index: -1;
+  background-image: linear-gradient(rgba(13, 14, 14, 0.336), rgba(255, 255, 255, 0.144)), url("./images/7e31e9b504f61134b4dba0f27d1ddbd3.jfif");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+main .mainframe .mainheading {
+  width: 50%;
+}
+main .mainframe .mainheading h1 {
+  font-size: 1.9rem;
+  margin: 0;
+  padding: 0;
+}
+main .mainframe .mainparagraph {
+  width: 50%;
+}
+main .mainframe .mainparagraph p {
+  margin-bottom: 0;
+}
+main .mainframe .mainby {
+  width: 30%;
+}
+main .blogframe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+}
+main .blogframe .leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main .blogframe .leftside .date {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  gap: 20px;
+}
+main .blogframe .leftside .date #date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  color: rgb(73, 80, 87);
+  font-weight: 800;
+}
+main .blogframe .leftside .date #date p {
+  margin: 0;
+  margin-bottom: 0;
+}
+main .blogframe .leftside .date #time {
+  color: rgb(73, 80, 87);
+  font-weight: 800;
+}
+main .blogframe .leftside .passage {
+  width: 60%;
+}
+main .blogframe .leftside .passage p {
+  margin: 0;
+}
+main .blogframe .leftside .passage h1 {
+  color: rgb(245, 72, 127);
+}
+main .blogframe .leftside .images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+  gap: 10px;
+}
+main .blogframe .leftside .images img {
+  width: 330.17px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+main .blogframe .leftside .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  gap: 8px;
+}
+main .blogframe .leftside .socials hr {
+  border: 1px solid rgb(245, 72, 127);
+  width: 40%;
+}
+main .blogframe .leftside .socials i {
+  color: rgb(119, 119, 119);
+}
+main .blogframe .leftside .socials i:hover {
+  color: rgb(245, 72, 127);
+}
+main .blogframe .leftside .responsivesection {
+  display: none;
+}
+main .blogframe .leftside .relatedheading {
+  width: 60%;
+}
+main .blogframe .leftside .relatedheading h1 {
+  font-size: 1.9rem;
+}
+main .blogframe .leftside #frame4 {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(248, 245, 245);
+  border-radius: 2px;
+}
+main .blogframe .leftside #frame4 p {
+  color: #F5487F;
+}
+main .blogframe .leftside #frame4 .poster1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 45%;
+  margin: 6px 6px 6px 6px;
+}
+main .blogframe .leftside #frame4 .poster1 .img img {
+  gap: 10px;
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+main .blogframe .leftside #frame4 .poster1 .credentials {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+main .blogframe .leftside #frame4 .poster1 .credentials .picture img {
+  width: 36px;
+  height: 36px;
+  border-radius: 26px;
+}
+main .blogframe .leftside #frame4 .poster1 .credentials .fname {
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F5487F;
+}
+main .blogframe .leftside #frame4 .poster1 .credentials .dated {
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F5487F;
+}
+main .blogframe .leftside .commentsheading {
+  width: 55%;
+}
+main .blogframe .leftside .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: rgb(248, 248, 248);
+}
+main .blogframe .leftside .center .comments {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+main .blogframe .leftside .center .comments .profilepic {
+  width: 20%;
+}
+main .blogframe .leftside .center .comments .profilepic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+main .blogframe .leftside .center .comments .profilename {
+  position: relative;
+}
+main .blogframe .leftside .center .comments .profilename p {
+  font-weight: 500;
+  color: rgb(16, 24, 40);
+}
+main .blogframe .leftside .center .comments .profilename .time {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 7px;
+  right: 0;
+  color: rgb(102, 112, 133);
+  font-size: 0.8rem;
+}
+main .blogframe .leftside .center .comments .profilename .profilecomment {
+  border: 1px solid rgb(228, 231, 236);
+  background-color: rgb(255, 255, 255);
+  margin-left: 10px;
+  width: 400px;
+  border-radius: 8px;
+  padding: 5px;
+}
+main .blogframe .leftside .center .comments .profilename .profilecomment p {
+  margin-left: 10px;
+  margin: 0;
+}
+main .blogframe .leftside .center .comments .profilename .profilecomment #special {
+  margin-bottom: 80px;
+  border-radius: 2px;
+  color: rgb(145, 145, 168);
+}
+main .blogframe .leftside .center .button {
+  width: 100%;
+}
+main .blogframe .leftside .center .button button {
+  width: 100px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgb(245, 72, 127);
+  color: white;
+  border: none;
+}
+main .blogframe .rightside {
+  width: 50%;
+  margin: 10px;
+  margin-top: 80px;
+}
+main .blogframe .rightside .mainpanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main .blogframe .rightside .mainpanel .authorpicture {
+  width: 20%;
+}
+main .blogframe .rightside .mainpanel .authorpicture img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+  border-radius: 50%;
+}
+main .blogframe .rightside .mainpanel .authorpanel {
+  gap: 10px;
+}
+main .blogframe .rightside .mainpanel .authorpanel .authorname p {
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+main .blogframe .rightside .mainpanel .authorpanel .authorprofession p {
+  margin: 0;
+  margin-bottom: 10px;
+  width: 300px;
+  font-size: 0.6rem;
+  color: rgb(102, 102, 102);
+}
+main .blogframe .rightside .mainpanel .authorpanel .authoricon {
+  gap: 10px;
+}
+main .blogframe .rightside .mainpanel .authorpanel .authoricon i {
+  padding: 5px;
+  color: white;
+  background-color: rgb(196, 196, 196);
+  border-radius: 3px;
+}
+main .blogframe .rightside .mainpanel .authorpanel .authoricon i:hover {
+  background-color: rgb(245, 72, 127);
+}
+main .blogframe .rightside .categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .blogframe .rightside .categories p {
+  font-weight: 500;
+}
+main .blogframe .rightside hr {
+  border: 1px solid rgb(236, 236, 236);
+  margin: 0;
+}
+main .blogframe .rightside .tags .tagpills {
+  gap: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 10px;
+}
+main .blogframe .rightside .tags .tagpills button {
+  border: 1px solid rgb(196, 196, 196);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  color: rgb(102, 102, 102);
+  border-radius: 2px;
+}
+main .blogframe .rightside .tags .tagpills button:hover {
+  background-color: rgb(245, 72, 127);
+  cursor: pointer;
+  color: white;
+}
+main footer {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+main footer #inside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 30px;
+}
+main footer #inside #side1 {
+  width: 50%;
+}
+main footer #inside #side1 p {
+  width: 60%;
+}
+main footer #inside #side1 span {
+  font-weight: bold;
+}
+main footer #inside #side2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 110px;
+}
+main footer #inside #side2 #links {
+  width: 150px;
+  height: 172px;
+}
+main footer #inside #side2 #links ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+main footer #inside #side2 #links ul li {
+  list-style: none;
+}
+main footer #inside #side2 #category {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main footer #inside #side2 #category ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+main footer #inside #side2 #category ul li {
+  list-style: none;
+}
+main footer #inside #side3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 495px;
+  height: 236px;
+}
+main footer .bigcontainer {
+  width: 100%;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main footer .bigcontainer #extend {
+  background-image: linear-gradient(to left, #F5487F, #FFFFFF);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+  position: absolute;
+  background: transparent;
+  bottom: 0;
+  right: 0;
+}
+main footer .bigcontainer #extend hr {
+  color: black;
+  width: 85%;
+}
+main footer .bigcontainer #extend h5 {
+  width: 90%;
+  text-align: right;
+  width: 90%;
+  padding: 20px;
+  padding-right: 100px;
+}
+main footer .bigcontainer #extend h5 span {
+  color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Poppins;
+  }
+  body .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  body h1 {
+    font-family: Poppins;
+    font-size: 0.6rem;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  main .responsivenav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    z-index: 4;
+    width: 100%;
+    padding: 0;
+  }
+  main .responsivenav h1 {
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.4rem;
+  }
+  main .responsivenav .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  main .responsivenav .menu ul {
+    background-color: rgb(245, 72, 127);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+  }
+  main .responsivenav .menu ul li {
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  main .responsivenav .menu ul li h1 i {
+    padding: 50px;
+    font-size: 2rem;
+  }
+  main .responsivenav .menu ul li a {
+    color: white;
+  }
+  main nav {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 0.4rem;
+    text-wrap: nowrap;
+    position: absolute;
+    top: 0;
+  }
+  main nav h1 i {
+    text-align: center;
+    width: 36px;
+    height: 20px;
+    margin-top: 8px;
+  }
+  main nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  main nav ul li {
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+  }
+  main nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  main nav ul button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5487F;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    width: 50px;
+    height: 20px;
+    font-size: 0.5rem;
+    margin-top: 5px;
+  }
+  main .mainframe {
+    height: 80vh;
+    width: 100vw;
+    background-size: cover;
+    top: 0;
+    z-index: -1;
+    background-image: linear-gradient(rgba(13, 14, 14, 0.459), rgba(133, 133, 133, 0.192)), url("./images/7e31e9b504f61134b4dba0f27d1ddbd3.jfif");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  main .mainframe .mainheading {
+    width: 90%;
+  }
+  main .mainframe .mainheading h1 {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+  }
+  main .mainframe .mainparagraph {
+    width: -moz-fit-content;
+    width: fit-content;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .mainframe .mainparagraph p {
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: rgb(229, 229, 229);
+  }
+  main .mainframe .mainby {
+    text-align: center;
+    font-size: 0.6rem;
+    width: 40%;
+    margin: 0;
+    text-wrap: nowrap;
+  }
+  main .blogframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+  }
+  main .blogframe .leftside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .blogframe .leftside .brres {
+    display: none;
+  }
+  main .blogframe .leftside .date {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    gap: 20px;
+  }
+  main .blogframe .leftside .date #date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(73, 80, 87);
+    font-weight: 800;
+    font-size: 0.5rem;
+  }
+  main .blogframe .leftside .date #date p {
+    margin: 0;
+    margin-bottom: 0;
+  }
+  main .blogframe .leftside .date #time {
+    color: rgb(73, 80, 87);
+    font-weight: 800;
+    font-size: 0.5rem;
+  }
+  main .blogframe .leftside .passage {
+    width: 90%;
+  }
+  main .blogframe .leftside .passage p {
+    margin: 0;
+    font-size: 0.58rem;
+  }
+  main .blogframe .leftside .passage h1 {
+    color: rgb(245, 72, 127);
+    font-size: 0.8rem;
+  }
+  main .blogframe .leftside .images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+  }
+  main .blogframe .leftside .images img {
+    width: 170px;
+    height: 130px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
+  main .blogframe .leftside .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    gap: 8px;
+  }
+  main .blogframe .leftside .socials hr {
+    border: 1px solid rgb(245, 72, 127);
+    width: 30%;
+  }
+  main .blogframe .leftside .socials i {
+    color: rgb(119, 119, 119);
+  }
+  main .blogframe .leftside .socials i:hover {
+    color: rgb(245, 72, 127);
+  }
+  main .blogframe .leftside .responsivesection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  main .blogframe .leftside .responsivesection h4 {
+    text-align: left;
+    width: 90%;
+    font-size: 0.8rem;
+  }
+  main .blogframe .leftside .responsivesection .rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    margin-top: 0px;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .side1 {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .side1 .mainpanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .side1 .mainpanel .authorpicture {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .side1 .mainpanel .authorpicture img {
+    width: 35px;
+    height: 35px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center top;
+       object-position: center top;
+    border-radius: 50%;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .side1 .mainpanel .authorpanel {
+    gap: 5px;
+    overflow: hidden;
+    min-width: 100px;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .side1 .mainpanel .authorpanel .authorname p {
+    font-weight: 800;
+    font-size: 0.6rem;
+    margin: 0;
+    padding: 0;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .side1 .mainpanel .authorpanel .authorprofession p {
+    margin: 0;
+    font-size: 0.5rem;
+    margin-bottom: 10px;
+    width: 120px;
+    color: rgb(102, 102, 102);
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .side1 .mainpanel .authorpanel .authoricon {
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .side1 .mainpanel .authorpanel .authoricon i {
+    padding: 3px;
+    margin: 0;
+    color: white;
+    background-color: rgb(196, 196, 196);
+    border-radius: 3px;
+    font-size: 0.5rem;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .side1 .mainpanel .authorpanel .authoricon i:hover {
+    background-color: rgb(245, 72, 127);
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .brres {
+    display: none;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .tags {
+    width: 80%;
+    height: 100%;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .tags h1 {
+    margin-top: 0;
+    font-size: 0.6rem;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .tags .tagpills {
+    gap: 5px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 80%;
+    row-gap: 10px;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .tags .tagpills .buttonset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .tags .tagpills .buttonset button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(196, 196, 196);
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 0px;
+    margin: 0;
+    padding: 7px;
+    background-color: white;
+    height: -moz-fit-content;
+    height: fit-content;
+    color: rgb(102, 102, 102);
+    border-radius: 3px;
+    font-size: 0.5rem;
+  }
+  main .blogframe .leftside .responsivesection .rightside .sidebyside .tags .tagpills .buttonset button:hover {
+    background-color: rgb(245, 72, 127);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+  }
+  main .blogframe .leftside .responsivesection .rightside .h4 {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+  main .blogframe .leftside .responsivesection .rightside .categories {
+    border-bottom: 1px dotted rgb(209, 231, 229);
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .blogframe .leftside .responsivesection .rightside .categories p {
+    font-weight: 500;
+    font-size: 0.6rem;
+  }
+  main .blogframe .leftside .responsivesection .rightside hr {
+    border: 1px solid rgb(236, 236, 236);
+    margin: 0;
+  }
+  main .blogframe .leftside .relatedheading {
+    width: 90%;
+  }
+  main .blogframe .leftside .relatedheading h1 {
+    font-size: 1rem;
+  }
+  main .blogframe .leftside #frame4 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 245, 245);
+    border-radius: 2px;
+  }
+  main .blogframe .leftside #frame4 p {
+    color: #F5487F;
+  }
+  main .blogframe .leftside #frame4 .poster1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 45%;
+    margin: 0px 0px 0px 0px;
+  }
+  main .blogframe .leftside #frame4 .poster1 .img img {
+    gap: 10px;
+    width: 130px;
+    height: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
+  main .blogframe .leftside #frame4 .poster1 .section p {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  main .blogframe .leftside #frame4 .poster1 .credentials {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+  }
+  main .blogframe .leftside #frame4 .poster1 .credentials .picture img {
+    width: 20px;
+    height: 20px;
+    border-radius: 26px;
+  }
+  main .blogframe .leftside #frame4 .poster1 .credentials .fname {
+    font-weight: 500px;
+    font-size: 0.5rem;
+    text-wrap: nowrap;
+    line-height: 24px;
+    color: #F5487F;
+  }
+  main .blogframe .leftside #frame4 .poster1 .credentials .dated {
+    font-weight: 400px;
+    font-size: 0.4rem;
+    text-wrap: nowrap;
+    line-height: 24px;
+    color: #F5487F;
+  }
+  main .blogframe .leftside .commentsheading {
+    width: 85%;
+    font-size: 0.6rem;
+  }
+  main .blogframe .leftside .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: rgb(248, 248, 248);
+  }
+  main .blogframe .leftside .center .comments {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+  }
+  main .blogframe .leftside .center .comments .profilepic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+  }
+  main .blogframe .leftside .center .comments .profilepic img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  main .blogframe .leftside .center .comments .profilename {
+    width: 90%;
+    position: relative;
+  }
+  main .blogframe .leftside .center .comments .profilename p {
+    font-weight: 500;
+    font-size: 0.7rem;
+    color: rgb(16, 24, 40);
+  }
+  main .blogframe .leftside .center .comments .profilename .time {
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    color: rgb(102, 112, 133);
+    font-size: 0.5rem;
+  }
+  main .blogframe .leftside .center .comments .profilename .profilecomment {
+    border: 1px solid rgb(228, 231, 236);
+    background-color: rgb(255, 255, 255);
+    margin-left: 0px;
+    width: 170px;
+    border-radius: 8px;
+    padding: 6px;
+  }
+  main .blogframe .leftside .center .comments .profilename .profilecomment p {
+    margin-left: 0px;
+    margin: 0;
+    font-size: 0.4rem;
+  }
+  main .blogframe .leftside .center .comments .profilename .profilecomment #special {
+    margin-bottom: 40px;
+    border-radius: 2px;
+    color: rgb(145, 145, 168);
+  }
+  main .blogframe .leftside .center .button {
+    width: 90%;
+    margin-top: 0;
+  }
+  main .blogframe .leftside .center .button button {
+    margin-top: 0;
+    font-size: 0.6rem;
+    width: 60px;
+    height: 25px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgb(245, 72, 127);
+    color: white;
+    border: none;
+  }
+  main .blogframe .rightside {
+    display: none;
+  }
+  main footer {
+    width: 100%;
+    background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  main footer #inside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    gap: 20px;
+  }
+  main footer #inside #side1 {
+    width: 70%;
+  }
+  main footer #inside #side1 p {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 0.5rem;
+  }
+  main footer #inside #side1 h3 {
+    font-size: 0.8rem;
+  }
+  main footer #inside #side1 span {
+    font-weight: bold;
+  }
+  main footer #inside #side2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main footer #inside #side2 #links {
+    width: 100px;
+    height: 172px;
+  }
+  main footer #inside #side2 #links h3 {
+    font-size: 0.8rem;
+  }
+  main footer #inside #side2 #links ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  main footer #inside #side2 #links ul li {
+    list-style: none;
+    font-size: 0.5rem;
+  }
+  main footer #inside #side2 #category {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main footer #inside #side2 #category h3 {
+    font-size: 0.8rem;
+  }
+  main footer #inside #side2 #category ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  main footer #inside #side2 #category ul li {
+    list-style: none;
+    font-size: 0.5rem;
+  }
+  main footer .bigcontainer {
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  main footer .bigcontainer #extend {
+    background-image: linear-gradient(to left, #F5487F, #FFFFFF);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(245, 72, 127, 0.27), rgb(255, 255, 255));
+    position: absolute;
+    background: transparent;
+    bottom: 0;
+    right: 0;
+  }
+  main footer .bigcontainer #extend hr {
+    color: black;
+    width: 100%;
+  }
+  main footer .bigcontainer #extend h5 {
+    width: 100%;
+    text-align: right;
+    width: 50%;
+    padding-left: 100px;
+    font-size: 0.5rem;
+    text-wrap: nowrap;
+  }
+  main footer .bigcontainer #extend h5 span {
+    color: black;
+  }
+}/*# sourceMappingURL=blogstyle.css.map */
